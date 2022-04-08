@@ -49,6 +49,10 @@ class MainActivity : AppCompatActivity() {
         b9.setOnClickListener {
             buttonClick(b9)
         }
+
+        btnReset.setOnClickListener {
+            reset()
+        }
     }
 
     fun buttonClick(btn: Button){
@@ -123,6 +127,18 @@ class MainActivity : AppCompatActivity() {
 
     fun toast(message: String){
         Toast.makeText(this@MainActivity, message, Toast.LENGTH_SHORT).show()
+    }
+
+    fun reset(){
+        b1.text = ""
+        b2.text = ""
+        b3.text = ""
+        b4.text = ""
+        b5.text = ""
+        b6.text = ""
+        b7.text = ""
+        b8.text = ""
+        b9.text = ""
     }
 
 }
